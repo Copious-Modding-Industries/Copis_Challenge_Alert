@@ -1,4 +1,4 @@
-local kills = StatsBiomeGetValue("enemies_killed")
+local kills = tonumber( StatsGetValue("enemies_killed") )
 if tonumber( kills ) > 0 then
     Gui = Gui or GuiCreate()
     GuiStartFrame(Gui)
